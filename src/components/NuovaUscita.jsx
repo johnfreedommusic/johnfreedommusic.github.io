@@ -14,6 +14,13 @@ import LaCometaAudio from "../audio/John Freedom - La cometa di Halley.mp3";
 
 // #region styled-components
 const StyledNuovaUscita = styled.section`
+  padding-top: 0 !important;
+  margin-top: -1rem !important;
+  
+  .title {
+    margin: 0.25rem 0 !important;
+  }
+  
   .artwork-wrapper {
     max-width: 360px;
     width: 100%;
@@ -76,6 +83,10 @@ const StyledNuovaUscita = styled.section`
     text-align: center;
     font-weight: bold;
   }
+  
+  p {
+    font-size: 1.25rem;
+  }
 `;
 // #endregion
 
@@ -103,7 +114,7 @@ const NuovaUscita = () => {
         <Container className="d-flex justify-content-center">
           <Title size={"h2"} text={"Nuova uscita"} />
         </Container>
-        <Container className="mt-4">
+        <Container className="mt-0">
           <Row className="g-4 align-items-center">
             <Col xs={12} md={6} className="d-flex justify-content-center">
               <div className="artwork-wrapper">

@@ -46,10 +46,12 @@ export { HeroDark as Dark };
 
 /* About Me
  **************************************************************
-  Add a second paragraph for the about me section.
+  Add bio text and a second paragraph for the about me section.
 */
-export const moreInfo =
-  "John Freedom è un giovane immigrato italiano vissuto in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\nNei suoi testi non fa a meno di denunciare il nuovo mondo che gli sta attorno, spesso confrontandolo con le sue origini. Tutto questo si riversa nel suo sound che unisce il vecchio e il nuovo, fondendo lo swing e l’elettronica, con sfumature jazz e blues.";
+export const bio =
+  "John Freedom è un giovane immigrato italiano emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\nDebutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante.\n\nFiglio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato. Un tema a lui caro è infatti l'immigrazione, di cui è stato testimone nel primo novecento e che vede manifestarsi allo stesso modo nella contemporaneità";
+
+export const moreInfo = null;
 /* Skills
  ************************************************************** 
   Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
@@ -125,18 +127,6 @@ export const projectCardImages = [
 */
 export const musicData = [
   {
-    id: 1,
-    name: "Immigrato in America",
-    artwork: ImmigratoInAmericaArt,
-    previewUrl: ImmigratoInAmericaAudio,
-    links: {
-      spotify: "https://open.spotify.com/track/1X8EdHqO1GPqAjKjfol6Hb?si=vUkx9psZQvmDpUkSKSkCnw&context=spotify%3Aalbum%3A7aOq7l2AMRvh6fv44qpbM1",
-      appleMusic: "https://music.apple.com/us/album/immigrato-in-america-single/1784125290",
-      amazonMusic: "https://music.amazon.it/albums/B0DPPKPKKV?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_HCqhhEvIqiC2h5i6Oz3iuwAZ3",
-      soundcloud: "https://soundcloud.com/john-freedom-832358450/john-freedom-immigrato-in?si=2eb5dc9ee05a4cfe8e8c1640ec669e6e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
-    },
-  },
-  {
     id: 2,
     name: "Storia di un brav'uomo",
     artwork: Art28,
@@ -146,6 +136,18 @@ export const musicData = [
       appleMusic: "https://music.apple.com/us/album/storia-di-un-bravuomo-single/1812226232",
       amazonMusic: "https://music.amazon.it/albums/B0F7CP46Q5?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_LT3rBTHkRNTMEt3MMGbX2xrjV",
       soundcloud: "https://soundcloud.com/john-freedom-832358450/storia-di-un-bravuomo",
+    },
+  },
+  {
+    id: 4,
+    name: "Mente Criminale",
+    artwork: CopCriminaleJohnCopia,
+    previewUrl: MenteCriminaleAudio,
+    links: {
+      spotify: "https://open.spotify.com/track/5DNnQxLinbzS4tTqlPeDA5?si=8a6704702eed47cd",
+      appleMusic: "https://music.apple.com/us/album/mente-criminale-single/1826246899",
+      amazonMusic: "https://music.amazon.it/albums/B0FHBBSPMT?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_NABwc81EJWWEI5Dropw5bVeNI",
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/mente-criminale-4_master_1",
     },
   },
   {
@@ -161,15 +163,15 @@ export const musicData = [
     },
   },
   {
-    id: 4,
-    name: "Mente Criminale",
-    artwork: CopCriminaleJohnCopia,
-    previewUrl: MenteCriminaleAudio,
+    id: 1,
+    name: "Immigrato in America",
+    artwork: ImmigratoInAmericaArt,
+    previewUrl: ImmigratoInAmericaAudio,
     links: {
-      spotify: "https://open.spotify.com/track/5DNnQxLinbzS4tTqlPeDA5?si=8a6704702eed47cd",
-      appleMusic: "https://music.apple.com/us/album/mente-criminale-single/1826246899",
-      amazonMusic: "https://music.amazon.it/albums/B0FHBBSPMT?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_NABwc81EJWWEI5Dropw5bVeNI",
-      soundcloud: "https://soundcloud.com/john-freedom-832358450/mente-criminale-4_master_1",
+      spotify: "https://open.spotify.com/track/1X8EdHqO1GPqAjKjfol6Hb?si=vUkx9psZQvmDpUkSKSkCnw&context=spotify%3Aalbum%3A7aOq7l2AMRvh6fv44qpbM1",
+      appleMusic: "https://music.apple.com/us/album/immigrato-in-america-single/1784125290",
+      amazonMusic: "https://music.amazon.it/albums/B0DPPKPKKV?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_HCqhhEvIqiC2h5i6Oz3iuwAZ3",
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/john-freedom-immigrato-in?si=2eb5dc9ee05a4cfe8e8c1640ec669e6e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
     },
   },
 ];

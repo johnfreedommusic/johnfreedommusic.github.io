@@ -3,14 +3,16 @@ import React from "react";
 import { useGetUsersQuery } from "../app/apiSlice";
 // Components
 import Hero from "../components/Hero";
+import QuoteSection from "../components/QuoteSection";
+import PhotoGallery from "../components/PhotoGallery";
 import AboutMe from "../components/AboutMe";
-import Projects from "../components/Projects";
 import NuovaUscita from "../components/NuovaUscita";
 import Musica from "../components/Musica";
+import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, moreInfo } from "../config";
+import { filteredProjects, bio, moreInfo } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -26,10 +28,12 @@ const Home = () => {
   return (
     <>
       <Hero name={userData?.name || "John Freedom"} />
-      <main>
+      <main style={{ position: 'relative' }}>
+        <QuoteSection />
+        <PhotoGallery />
         <AboutMe
           avatar_url={userData.avatar_url}
-          bio={userData.bio}
+          bio={bio}
           moreInfo={moreInfo}
         />
         <NuovaUscita />

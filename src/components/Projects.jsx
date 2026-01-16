@@ -29,44 +29,63 @@ const Projects = () => {
             <Title size={"h2"} text={"Video"} />
           </Container>
           <Container className="mt-4">
+            <Row className="g-4 justify-content-center mb-4">
+              <Col xs={12} className="d-flex justify-content-center">
+                <div style={{ width: "100%", maxWidth: "1000px", aspectRatio: "16 / 9", border: "var(--border)", overflow: "hidden", borderRadius: "0.5rem" }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/f6NiuzjNNX4"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ border: "none" }}
+                  />
+                </div>
+              </Col>
+            </Row>
             <Row className="g-4 justify-content-center">
               <Col xs={12} md={6} lg={4} className="d-flex justify-content-center">
                 <div style={{ width: "100%", maxWidth: "360px", aspectRatio: "9 / 16", border: "var(--border)", overflow: "hidden", borderRadius: "0.5rem" }}>
-                  <video
-                    ref={(el) => (refs.current.left = el)}
-                    onPlay={() => handlePlay("left")}
-                    playsInline
-                    controls
-                    style={{ width: "100%", height: "100%" }}
-                  >
-                    <source src={Video3} type="video/mp4" />
-                  </video>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/HUaYIgSw5Q0"
+                    title="YouTube Shorts video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ border: "none" }}
+                  />
                 </div>
               </Col>
               <Col xs={12} md={6} lg={4} className="d-flex justify-content-center">
                 <div style={{ width: "100%", maxWidth: "360px", aspectRatio: "9 / 16", border: "var(--border)", overflow: "hidden", borderRadius: "0.5rem" }}>
-                  <video
-                    ref={(el) => (refs.current.center = el)}
-                    onPlay={() => handlePlay("center")}
-                    playsInline
-                    controls
-                    style={{ width: "100%", height: "100%" }}
-                  >
-                    <source src={Video1} type="video/mp4" />
-                  </video>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/Ze4dgNoQY4I"
+                    title="YouTube Shorts video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ border: "none" }}
+                  />
                 </div>
               </Col>
               <Col xs={12} md={6} lg={4} className="d-flex justify-content-center">
                 <div style={{ width: "100%", maxWidth: "360px", aspectRatio: "9 / 16", border: "var(--border)", overflow: "hidden", borderRadius: "0.5rem" }}>
-                  <video
-                    ref={(el) => (refs.current.right = el)}
-                    onPlay={() => handlePlay("right")}
-                    playsInline
-                    controls
-                    style={{ width: "100%", height: "100%" }}
-                  >
-                    <source src={Video2} type="video/mp4" />
-                  </video>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/bUno8g7yIDA"
+                    title="YouTube Shorts video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ border: "none" }}
+                  />
                 </div>
               </Col>
             </Row>
