@@ -35,7 +35,23 @@ const Projects = () => {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://youtu.be/C24Qsc5Lghc?si=zwHpLxu_8qOQikYX"
+                    src="https://www.youtube.com/embed/C24Qsc5Lghc"
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    style={{ border: "none" }}
+                  />
+                </div>
+              </Col>
+            </Row>
+            <Row className="g-4 justify-content-center mb-4">
+              <Col xs={12} className="d-flex justify-content-center">
+                <div style={{ width: "100%", maxWidth: "1000px", aspectRatio: "16 / 9", border: "var(--border)", overflow: "hidden", borderRadius: "0.5rem" }}>
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/fi8sJsUm1P4 "
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
