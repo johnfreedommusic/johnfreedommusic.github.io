@@ -35,7 +35,7 @@ const Projects = () => {
                   <iframe
                     width="100%"
                     height="100%"
-                    src="https://www.youtube.com/embed/f6NiuzjNNX4"
+                    src="https://youtu.be/C24Qsc5Lghc?si=zwHpLxu_8qOQikYX"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
