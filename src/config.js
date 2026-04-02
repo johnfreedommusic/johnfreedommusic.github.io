@@ -5,8 +5,8 @@ import { Icon } from "@iconify/react";
 // import newLogo from "./images/yourFileName"
 
 // Hero Images (add your images to the /images directory with the same names)
-import HeroLight from "./images/hero-light.jpg";
-import HeroDark from "./images/hero-dark.jpg";
+import HeroLight from "./images/hero-light.webp";
+import HeroDark from "./images/hero-dark.webp";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
@@ -16,12 +16,16 @@ import NavLogoLight from "./images/Logo Longer.png";
 import Art28 from "./images/28.png";
 import CopertinaNuovaVammazzo from "./images/Copertina Nuova V'ammazzo.png";
 import CopCriminaleJohnCopia from "./images/COP CRIMINALE JOHN - Copia.jpg";
+import LaCometaArt from "./images/La cometa di Halley (Copertina).jpg";
+import LaCometaAcousticArt from "./images/La cometa di Halley (acustico) - Copertina.jpeg";
 
 // Local Audio Files (add your audio files to the src/audio directory)
 import ImmigratoInAmericaAudio from "./audio/immigrato-in-america.mp3";
 import StoriaDiUnBravuomoAudio from "./audio/storia-di-un-bravuomo.mp3";
 import VammazzoAudio from "./audio/vammazzo.mp3";
 import MenteCriminaleAudio from "./audio/mente-criminale.mp3";
+import LaCometaAudio from "./audio/John Freedom - La cometa di Halley.mp3";
+import LaCometaAcousticAudio from "./audio/Halley acustico.mp3";  
 
 /* START HERE
  **************************************************************
@@ -126,6 +130,30 @@ export const projectCardImages = [
   - links: per-platform URLs. Leave any null to hide that platform icon
 */
 export const musicData = [
+  {
+    id: 6,
+    name: "La cometa di Halley (Acoustic Version)",
+    artwork: LaCometaAcousticArt,
+    previewUrl: LaCometaAcousticAudio,
+    links: {
+      spotify: "https://open.spotify.com/track/5IMTJQ6bdtbqJASOeAllFn?si=20bc8f1096f24ad7",
+      appleMusic: "https://music.apple.com/it/album/la-cometa-di-halley-acoustic-version-single/1877657090",
+      amazonMusic: "https://music.amazon.it/albums/B0GN54R46X?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_fdvYhYWscjRI1L565oBxQdGaX",
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/john-freedom-cometa-di-halley?si=c2b8fa8ed9c44232a28d0efd5b2eea8c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+    },
+  },
+  {
+    id: 5,
+    name: "La cometa di Halley",
+    artwork: LaCometaArt,
+    previewUrl: LaCometaAudio,
+    links: {
+      spotify: "https://open.spotify.com/track/4C72XCifgqbhcEwiVjsLUq?si=1b6b9199067449bf",
+      appleMusic: "https://music.apple.com/us/album/la-cometa-di-halley/1839675475?i=1839675476",
+      amazonMusic: "https://music.amazon.com/albums/B0FQVLHN3B?trackAsin=B0FQW7G11R",
+      soundcloud: "https://soundcloud.com/john-freedom-832358450/la-cometa-di-halley?utm_medium=api&utm_campaign=social_sharing&utm_source=id_314547",
+    },
+  },
   {
     id: 2,
     name: "Storia di un brav'uomo",

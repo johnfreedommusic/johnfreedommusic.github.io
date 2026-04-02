@@ -83,7 +83,7 @@ const Musica = () => {
         </Container>
         <Container className="mt-4">
           <Row xs={1} sm={2} md={2} lg={4} className="g-4">
-            {musicData.slice(0, 4).map((song) => (
+            {musicData.map((song) => (
               <Col key={song.id}>
                 <SongTile song={song} />
               </Col>
