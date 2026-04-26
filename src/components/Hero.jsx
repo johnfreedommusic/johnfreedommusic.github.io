@@ -2,7 +2,6 @@ import React from "react";
 // Styles
 import styled from "styled-components";
 // State
-import PropTypes from "prop-types";
 import { useSelector } from "react-redux";
 import { selectMode } from "../app/appSlice";
 // Icons
