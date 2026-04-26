@@ -2,25 +2,10 @@ import React from "react";
 // Components
 import { Element } from "react-scroll";
 import { Col, Container, Row } from "react-bootstrap";
-// Videos
-import Video1 from "../videos/Reshape Videos for Press Kit 1.mp4";
-import Video2 from "../videos/Reshape Videos for Press Kit 2.mp4";
-import Video3 from "../videos/TikTok Mente Criminale in Sala Prove Take 26.mp4";
 import Title from "./Title";
 
 // #region component
 const Projects = () => {
-  const refs = React.useRef({});
-
-  const handlePlay = (id) => {
-    const players = refs.current;
-    Object.entries(players).forEach(([key, el]) => {
-      if (key !== id && el && !el.paused) {
-        el.pause();
-      }
-    });
-  };
-
   return (
     <Element name={"Video"} id="video">
       <section className="section">

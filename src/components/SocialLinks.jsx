@@ -6,7 +6,7 @@ import { useGetSocialsQuery } from "../app/apiSlice";
 // Icons
 import { Icon } from "@iconify/react";
 // Config
-import { Blog, socialLinks } from "../config";
+import { socialLinks } from "../config";
 
 // #region styled-components
 const StyledSocialLinks = styled.div`

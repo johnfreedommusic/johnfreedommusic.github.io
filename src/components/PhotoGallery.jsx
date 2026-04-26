@@ -102,7 +102,7 @@ const Carousel = ({ images }) => {
       </div>
       {/* Center (current) */}
       <div className="slide center">
-        <img src={images[index]} alt={`Photo ${index + 1}`} className="photo-img" />
+        <img src={images[index]} alt={`Slide ${index + 1}`} className="photo-img" />
       </div>
       {/* Right (next) */}
       <div className="slide side right">
