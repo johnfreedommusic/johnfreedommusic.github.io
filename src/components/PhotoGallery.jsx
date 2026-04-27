@@ -98,15 +98,33 @@ const Carousel = ({ images }) => {
       </button>
       {/* Left (previous) */}
       <div className="slide side left">
-        <img src={images[(index - 1 + total) % total]} alt="Previous" className="photo-img" />
+        <img
+          src={images[(index - 1 + total) % total]}
+          alt="Previous"
+          className="photo-img"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       {/* Center (current) */}
       <div className="slide center">
-        <img src={images[index]} alt={`Slide ${index + 1}`} className="photo-img" />
+        <img
+          src={images[index]}
+          alt={`Slide ${index + 1}`}
+          className="photo-img"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       {/* Right (next) */}
       <div className="slide side right">
-        <img src={images[(index + 1) % total]} alt="Next" className="photo-img" />
+        <img
+          src={images[(index + 1) % total]}
+          alt="Next"
+          className="photo-img"
+          loading="lazy"
+          decoding="async"
+        />
       </div>
       <button className="arrow right" aria-label="Next" onClick={next}>
         <Icon icon="mdi:chevron-right" width="32" height="32" />
@@ -125,7 +143,6 @@ const PhotoGallery = () => {
       .keys()
       .sort()
       .map(ctx)
-      .filter(img => !img.includes('2.jpg')); // Exclude 2.jpg from gallery
   } catch (e) {
     photos = [];
   }

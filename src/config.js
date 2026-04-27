@@ -10,14 +10,14 @@ import HeroDark from "./images/hero-dark.webp";
 
 // Projects Images (add your images to the images directory and import below)
 import Logo from "./images/logo.svg";
-import ImmigratoInAmericaArt from "./images/IMMIGRATO IN AMERICA.png";
+import ImmigratoInAmericaArt from "./images/cop_iia.webp";
 import NavLogoDark from "./images/Logo Longer White.png";
 import NavLogoLight from "./images/Logo Longer.png";
-import Art28 from "./images/28.png";
-import CopertinaNuovaVammazzo from "./images/Copertina Nuova V'ammazzo.png";
-import CopCriminaleJohnCopia from "./images/COP CRIMINALE JOHN - Copia.jpg";
-import LaCometaArt from "./images/La cometa di Halley (Copertina).jpg";
-import LaCometaAcousticArt from "./images/La cometa di Halley (acustico) - Copertina.jpeg";
+import Art28 from "./images/cop_sdubu.webp";  
+import CopertinaNuovaVammazzo from "./images/cop_ammazzo.webp";
+import CopCriminaleJohnCopia from "./images/cop_mc.webp";
+import LaCometaArt from "./images/cop_halley.webp";
+import LaCometaAcousticArt from "./images/cop_halley_acustico.webp";
 
 // Local Audio Files (add your audio files to the src/audio directory)
 import ImmigratoInAmericaAudio from "./audio/immigrato-in-america.mp3";

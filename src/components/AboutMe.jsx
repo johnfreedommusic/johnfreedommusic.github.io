@@ -8,7 +8,7 @@ import { Element } from "react-scroll";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
 // Images
-import bioPhoto from "../images/2.jpg";
+import bioPhoto from "../images/bio_icon.webp";
 
 // #region styled-components
 const StyledAboutMe = styled.section`
@@ -55,7 +55,13 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
           </Container>
           <Row className="align-items-center mt-0">
             <Col md={4} className="d-flex justify-content-center mb-4 mb-md-0">
-              <img src={bioPhoto} alt="Bio" className="bio-img" />
+              <img
+                src={bioPhoto}
+                alt="Bio"
+                className="bio-img"
+                loading="lazy"
+                decoding="async"
+              />
             </Col>
             <Col md={8} className="d-flex flex-column text-center">
               <Container style={{ marginTop: '2rem' }}>

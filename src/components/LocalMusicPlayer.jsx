@@ -98,6 +98,8 @@ const LocalMusicPlayer = ({ song }) => {
             src={song.artwork} 
             alt={song.name} 
             className="player-artwork"
+            loading="lazy"
+            decoding="async"
           />
           <div className="player-info">
             <h4>{song.name}</h4>

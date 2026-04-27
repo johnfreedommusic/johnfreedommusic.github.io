@@ -92,6 +92,9 @@ const Hero = () => {
               alt="Logo"
               className="mx-auto d-block"
               style={{ width: "28rem", maxWidth: "60vw" }}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
             <div className="d-flex align-items-center justify-content-center" style={{ marginTop: "1cm" }}>
               <SocialLinks />
