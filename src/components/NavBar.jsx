@@ -12,7 +12,7 @@ import defaultLogo from "../images/defaultNavLogo.svg";
 import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
 // Config
-import { navLogoDark, navLogoLight } from "../config";
+import { enable_novità, navLogoDark, navLogoLight } from "../config";
 import ThemeToggle from "./ThemeToggle";
 
 // #region constants
@@ -24,9 +24,12 @@ const navLinks = {
   to: [
     { id: "1T", name: "Home", to: "Home" },
     { id: "2T", name: "Bio", to: "Bio" },
-    { id: "2.5T", name: "Novità", to: "Novità" },
+    ...(enable_novità
+      ? [{ id: "2.5T", name: "Novità", to: "Novità" }]
+      : []),
     { id: "3T", name: "Musica", to: "Musica" },
     { id: "4T", name: "Video", to: "Video" },
+    { id: "4.5T", name: "Ufficio Stampa", to: "Ufficio Stampa" },
     { id: "5T", name: "Contatti", to: "Contatti" },
   ],
 };

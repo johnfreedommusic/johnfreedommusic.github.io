@@ -9,10 +9,11 @@ import AboutMe from "../components/AboutMe";
 import Novità from "../components/Novità";
 import Musica from "../components/Musica";
 import Projects from "../components/Projects";
+import UfficioStampa from "../components/UfficioStampa";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, bio, moreInfo } from "../config";
+import { filteredProjects, bio, moreInfo, enable_novità } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
@@ -31,7 +32,7 @@ const Home = () => {
       <main style={{ position: 'relative' }}>
         <QuoteSection />
         <PhotoGallery />
-        <Novità />
+        {enable_novità && <Novità />}
         <AboutMe
           avatar_url={userData.avatar_url}
           bio={bio}
@@ -39,6 +40,7 @@ const Home = () => {
         />
         <Musica />
         <Projects filteredProjects={filteredProjects} />
+        <UfficioStampa />
         <Contact />
       </main>
       <BackToTop />

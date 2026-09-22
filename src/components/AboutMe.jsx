@@ -23,6 +23,7 @@ const StyledAboutMe = styled.section`
   
   p {
     font-size: 1.25rem;
+    text-align: justify;
     white-space: pre-line;
   }
   .bio-img {

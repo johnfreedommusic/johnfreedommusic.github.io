@@ -44,6 +44,9 @@ export const navLogoLight = NavLogoLight;
 */
 export const Blog = null;
 
+// Set to false to hide the Novità section and its navigation link.
+export const enable_novità = false;
+
 // Hero images (imported above - lines 8-9)
 export { HeroLight as Light };
 export { HeroDark as Dark };
@@ -52,8 +55,7 @@ export { HeroDark as Dark };
  **************************************************************
   Add bio text and a second paragraph for the about me section.
 */
-export const bio =
-  "John Freedom è un giovane immigrato italiano emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\nDebutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. Apre il concerto dei Patagarri il 27 Marzo 2026 all'Hiroshima Mon Amour di Torino. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante.\n\nFiglio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato. Un tema a lui caro è infatti l'immigrazione, di cui è stato testimone nel primo novecento e che vede manifestarsi allo stesso modo nella contemporaneità";
+export const bio = "John è un giovane immigrato italiano di 26 anni, emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\n Nato nel mezzogiorno, si avvicina alla musica fin da piccolo studiando pianoforte all'età di 7 anni e scoprendo la batteria e le percussioni qualche anno dopo. È durante l'adolescenza che inizia a produrre le sue prime strumentali e a scrivere le sue prime canzoni. Da quel momento non ha più smesso di creare musica, collaborando come produttore e songwriter per amici e artisti. Adesso vive a Torino dove coltiva il suo progetto personale.\n\n Debutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. L’anno successivo apre il concerto dei Patagarri all’Hiroshima Mon Amour di Torino e apre le danze della serata di TonyPitony al TantaRobba Festival. A settembre dello stesso anno realizza il suo primo piccolo tour in cui porta lo swing in giro nella Sicilia orientale. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante. Figlio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato.\n\n La musica per John è terapia: nasce come una manifestazione della sua identità musicale, che parte dalle big band di Benny Goodman e Glenn Miller per arrivare persino al fuoco dei The Doors, ma è anche un tentativo di evasione da una società che non lo rappresenta del tutto.";
 
 export const moreInfo = null;
 /* Skills
