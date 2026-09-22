@@ -29,6 +29,8 @@
     "react-scripts": "^5.0.1"
   },
   "scripts": {
+    "prestart": "node scripts/generate-press-articles.js",
+    "prebuild": "node scripts/generate-press-articles.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
