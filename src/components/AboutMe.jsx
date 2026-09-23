@@ -41,12 +41,10 @@ const StyledAboutMe = styled.section`
 
 // #region component
 const propTypes = {
-  avatar_url: PropTypes.string.isRequired,
   bio: PropTypes.string,
-  moreInfo: PropTypes.string,
 };
 
-const AboutMe = ({ avatar_url, bio, moreInfo }) => {
+const AboutMe = ({ bio }) => {
   return (
     <Element name={"Bio"} id="bio">
       <StyledAboutMe className="section">
@@ -67,7 +65,6 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
             <Col md={8} className="d-flex flex-column text-center">
               <Container style={{ marginTop: '2rem' }}>
                 {bio && <p>{bio}</p>}
-                {moreInfo && <p>{moreInfo}</p>}
               </Container>
             </Col>
           </Row>

@@ -10,9 +10,8 @@ import { Light, Dark } from "../config";
 import LogoLongLight from "../images/Logo Longer.png";
 import LogoLongDark from "../images/Logo Longer White.png";
 // Components
-import { useErrorBoundary } from "react-error-boundary";
 import { Link } from "react-scroll";
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import SocialLinks from "./SocialLinks";
 
 // #region styled-components
@@ -76,10 +75,7 @@ const StyledHero = styled.header`
 // #endregion
 
 // #region component
-const propTypes = {};
-
 const Hero = () => {
-  const { showBoundary } = useErrorBoundary();
   const theme = useSelector(selectMode);
 
   return (
@@ -108,23 +104,11 @@ const Hero = () => {
             </Link>
           </Col>
         </Row>
-        <Button
-          className="d-none"
-          onClick={() =>
-            showBoundary({
-              name: "Error",
-              message: "Simulated error message",
-            })
-          }
-        >
-          Simulate Error Boundary
-        </Button>
       </Container>
     </StyledHero>
   );
 };
 
-Hero.propTypes = propTypes;
 // #endregion
 
 export default Hero;

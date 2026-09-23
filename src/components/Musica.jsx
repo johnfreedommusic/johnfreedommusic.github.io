@@ -8,8 +8,6 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
 // Config
 import { musicData } from "../config";
-// Images
-import Logo from "../images/logo.svg";
 
 // #region styled-components
 const StyledMusic = styled.section`
@@ -102,7 +100,7 @@ const SongTile = ({ song }) => {
     <>
       <div className="artwork-tile">
         <img
-          src={song.artwork || Logo}
+          src={song.artwork}
           alt={song.name}
           className="artwork-img"
           loading="lazy"
@@ -133,7 +131,7 @@ const SongTile = ({ song }) => {
           {song.previewUrl && (
             <audio controls preload="none">
               <source src={song.previewUrl} />
-              Your browser does not support the audio element.
+              Il tuo browser non supporta la riproduzione audio.
             </audio>
           )}
         </div>
@@ -146,5 +144,4 @@ const SongTile = ({ song }) => {
 };
 
 export default Musica;
-
 

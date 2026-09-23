@@ -1,6 +1,4 @@
 import React from "react";
-// State
-import { useGetUsersQuery } from "../app/apiSlice";
 // Components
 import Hero from "../components/Hero";
 import QuoteSection from "../components/QuoteSection";
@@ -13,33 +11,26 @@ import UfficioStampa from "../components/UfficioStampa";
 import Contact from "../components/Contact";
 import BackToTop from "../components/BackToTop";
 // Config
-import { filteredProjects, bio, moreInfo, enable_novità } from "../config";
+import { bio, enable_novità } from "../config";
 // Utils
 import { updateTitle } from "../utils";
 
 // #region component
 const Home = () => {
-  const { data: userData } = useGetUsersQuery();
-
   React.useEffect(() => {
-    const displayName = userData?.name || "John Freedom";
-    updateTitle(displayName);
-  }, [userData]);
+    updateTitle("John Freedom");
+  }, []);
 
   return (
     <>
-      <Hero name={userData?.name || "John Freedom"} />
+      <Hero />
       <main style={{ position: 'relative' }}>
         <QuoteSection />
         <PhotoGallery />
         {enable_novità && <Novità />}
-        <AboutMe
-          avatar_url={userData.avatar_url}
-          bio={bio}
-          moreInfo={moreInfo}
-        />
+        <AboutMe bio={bio} />
         <Musica />
-        <Projects filteredProjects={filteredProjects} />
+        <Projects />
         <UfficioStampa />
         <Contact />
       </main>

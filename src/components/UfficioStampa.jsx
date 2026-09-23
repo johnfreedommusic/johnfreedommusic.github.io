@@ -12,6 +12,9 @@ const StyledSection = styled.section`
   .press-carousel {
     position: relative;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .press-list {
@@ -106,8 +109,19 @@ const StyledSection = styled.section`
 
   @media (max-width: 575px) {
     .press-list {
-      padding-right: 3rem;
-      padding-left: 3rem;
+      max-width: 100%;
+      padding: 0.5rem 0 1.5rem;
+      overscroll-behavior-x: contain;
+    }
+
+    .press-card {
+      flex: 0 0 100%;
+      min-width: 0;
+      max-width: 100%;
+    }
+
+    .press-title {
+      overflow-wrap: anywhere;
     }
   }
 `;
@@ -139,8 +153,12 @@ const UfficioStampa = () => {
     const list = listRef.current;
     if (!list) return;
 
+    const card = list.querySelector(".press-card");
+    const gap = parseFloat(window.getComputedStyle(list).columnGap) || 0;
+    const distance = card ? card.offsetWidth + gap : list.clientWidth;
+
     list.scrollBy({
-      left: direction * Math.max(list.clientWidth * 0.8, 280),
+      left: direction * distance,
       behavior: "smooth",
     });
   };

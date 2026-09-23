@@ -1,15 +1,6 @@
-// Skills icons - https://icon-sets.iconify.design/
-import { Icon } from "@iconify/react";
-
-// Navbar Logo image (add your image to the src/images directory and uncomment the line below to import your image)
-// import newLogo from "./images/yourFileName"
-
-// Hero Images (add your images to the /images directory with the same names)
 import HeroLight from "./images/hero-light.webp";
 import HeroDark from "./images/hero-dark.webp";
 
-// Projects Images (add your images to the images directory and import below)
-import Logo from "./images/logo.svg";
 import ImmigratoInAmericaArt from "./images/cop_iia.webp";
 import NavLogoDark from "./images/Logo Longer White.png";
 import NavLogoLight from "./images/Logo Longer.png";
@@ -19,7 +10,6 @@ import CopCriminaleJohnCopia from "./images/cop_mc.webp";
 import LaCometaArt from "./images/cop_halley.webp";
 import LaCometaAcousticArt from "./images/cop_halley_acustico.webp";
 
-// Local Audio Files (add your audio files to the src/audio directory)
 import ImmigratoInAmericaAudio from "./audio/immigrato-in-america.mp3";
 import StoriaDiUnBravuomoAudio from "./audio/storia-di-un-bravuomo.mp3";
 import VammazzoAudio from "./audio/vammazzo.mp3";
@@ -27,110 +17,16 @@ import MenteCriminaleAudio from "./audio/mente-criminale.mp3";
 import LaCometaAudio from "./audio/John Freedom - La cometa di Halley.mp3";
 import LaCometaAcousticAudio from "./audio/Halley acustico.mp3";  
 
-/* START HERE
- **************************************************************
-  Add your GitHub username (string - "YourUsername") below.
-*/
-export const githubUsername = "johnfreedommusic";
-
-// Navbar Logo images
-export const navLogo = NavLogoLight; // use colored/logo longer for default
 export const navLogoDark = NavLogoDark;
 export const navLogoLight = NavLogoLight;
 
-/* Main
- ************************************************************** 
-  Add a custom blog icon or update the hero images for the Main section.
-*/
-export const Blog = null;
-
-// Set to false to hide the Novità section and its navigation link.
 export const enable_novità = false;
 
-// Hero images (imported above - lines 8-9)
 export { HeroLight as Light };
 export { HeroDark as Dark };
 
-/* About Me
- **************************************************************
-  Add bio text and a second paragraph for the about me section.
-*/
 export const bio = "John è un giovane immigrato italiano di 26 anni, emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\n Nato nel mezzogiorno, si avvicina alla musica fin da piccolo studiando pianoforte all'età di 7 anni e scoprendo la batteria e le percussioni qualche anno dopo. È durante l'adolescenza che inizia a produrre le sue prime strumentali e a scrivere le sue prime canzoni. Da quel momento non ha più smesso di creare musica, collaborando come produttore e songwriter per amici e artisti. Adesso vive a Torino dove coltiva il suo progetto personale.\n\n Debutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. L’anno successivo apre il concerto dei Patagarri all’Hiroshima Mon Amour di Torino e apre le danze della serata di TonyPitony al TantaRobba Festival. A settembre dello stesso anno realizza il suo primo piccolo tour in cui porta lo swing in giro nella Sicilia orientale. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante. Figlio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato.\n\n La musica per John è terapia: nasce come una manifestazione della sua identità musicale, che parte dalle big band di Benny Goodman e Glenn Miller per arrivare persino al fuoco dei The Doors, ma è anche un tentativo di evasione da una società che non lo rappresenta del tutto.";
 
-export const moreInfo = null;
-/* Skills
- ************************************************************** 
-  Add or remove skills in the SAME format below, choose icons here - https://icon-sets.iconify.design/
-*/
-export const skillData = [
-  {
-    id: 1,
-    skill: <Icon icon="mdi:language-html5" className="display-4" />,
-    name: "HTML5",
-  },
-  {
-    id: 2,
-    skill: <Icon icon="ion:logo-css3" className="display-4" />,
-    name: "CSS3",
-  },
-  {
-    id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
-  },
-  {
-    id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "React",
-  },
-  {
-    id: 6,
-    skill: <Icon icon="file-icons:styledcomponents" className="display-4" />,
-    name: "Styled Components",
-  },
-  {
-    id: 7,
-    skill: <Icon icon="akar-icons:redux-fill" className="display-4" />,
-    name: "Redux",
-  },
-  {
-    id: 8,
-    skill: <Icon icon="bi:git" className="display-4" />,
-    name: "Git",
-  },
-  // Removed GitHub skill icon
-];
-
-// Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = null;
-
-/* Projects
- ************************************************************** 
-  List the repo names (string - "your-repo-name") you want to include (they will be sorted alphabetically). If empty, only the first 3 will be included.
-*/
-export const filteredProjects = ["example-1", "example-2", "example-3"];
-
-// Replace the defualt GitHub image for matching repos below (images imported above - lines 7-8)
-export const projectCardImages = [
-  {
-    name: "example-1",
-    image: Logo,
-  },
-];
-
-/* Music
- **************************************************************
-  Add your songs below. For each song provide:
-  - name: string (song title)
-  - artwork: an imported image (optional, falls back to Logo)
-  - previewUrl: local audio file path (mp3/m4a/ogg). Leave null to hide player
-  - links: per-platform URLs. Leave any null to hide that platform icon
-*/
 export const musicData = [
   {
     id: 6,
@@ -206,18 +102,8 @@ export const musicData = [
   },
 ];
 
-/* Contact Info
- ************************************************************** 
-  Add your formspree endpoint below.
-  https://formspree.io/
-*/
 export const formspreeUrl = "https://formspree.io/f/xnnzkbqp";
 
-/* Custom Social Links
- **************************************************************
-  Add your social links below to show icons in the footer. Leave as null to hide.
-  Example: "https://instagram.com/your_username"
-*/
 export const socialLinks = {
   instagram: "https://www.instagram.com/_johnfreedom/",
   tiktok: "https://www.tiktok.com/@john.freedom60",
@@ -226,5 +112,4 @@ export const socialLinks = {
   soundcloud: "https://soundcloud.com/john-freedom-832358450",
 };
 
-// Footer icons theme (light or dark)
 export const footerTheme = "dark";

@@ -6,8 +6,6 @@ import { selectMode } from "../app/appSlice";
 import PropTypes from "prop-types";
 // Router
 import { Link, useLocation } from "react-router-dom";
-// Images
-import defaultLogo from "../images/defaultNavLogo.svg";
 // Components
 import { Link as ScrollLink } from "react-scroll";
 import { Container, Nav, Navbar } from "react-bootstrap";
@@ -17,10 +15,7 @@ import ThemeToggle from "./ThemeToggle";
 
 // #region constants
 const navLinks = {
-  routes: [
-    { id: "1R", name: "Home", route: "/" },
-    { id: "2R", name: "All Projects", route: "/All-Projects" },
-  ],
+  routes: [{ id: "1R", name: "Home", route: "/" }],
   to: [
     { id: "1T", name: "Home", to: "Home" },
     { id: "2T", name: "Bio", to: "Bio" },
@@ -51,12 +46,11 @@ const StyledDiv = styled.div`
 
 // #region component
 const propTypes = {
-  Logo: PropTypes.node,
   callBack: PropTypes.func,
   closeDelay: PropTypes.number,
 };
 
-const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
+const NavBar = ({ callBack, closeDelay = 125 }) => {
   const theme = useSelector(selectMode);
   const [isExpanded, setisExpanded] = React.useState(false);
   const { pathname } = useLocation();
@@ -76,14 +70,8 @@ const NavBar = ({ Logo = defaultLogo, callBack, closeDelay = 125 }) => {
         <Container>
           <Navbar.Brand>
             <img
-              alt="Logo"
-              src={
-                Logo === null
-                  ? defaultLogo
-                  : theme === "light"
-                  ? navLogoLight || Logo
-                  : navLogoDark || Logo
-              }
+              alt="John Freedom"
+              src={theme === "light" ? navLogoLight : navLogoDark}
               style={{ height: 35 }}
               className="logo-img"
             />

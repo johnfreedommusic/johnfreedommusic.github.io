@@ -1,8 +1,7 @@
-// https://redux-toolkit.js.org/usage/usage-guide#simplifying-slices-with-createslice
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  mode: "light",
+  mode: "dark",
 };
 
 export const appSlice = createSlice({

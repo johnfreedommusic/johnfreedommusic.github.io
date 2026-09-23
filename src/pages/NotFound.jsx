@@ -1,23 +1,12 @@
 import React from "react";
 // Styles
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 // Components
 import { Container } from "react-bootstrap";
-// Images
-import Logo from "../images/logo.svg";
 // Utils
 import { updateTitle } from "../utils";
 
 // #region styled-components
-const Spin = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
 const StyledNotFound = styled.main`
   display: flex;
   flex-direction: column;
@@ -33,33 +22,22 @@ const StyledNotFound = styled.main`
     font-size: 2rem;
   }
 
-  .logo-img {
-    width: 10rem;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    img {
-      animation: ${Spin} infinite 20s linear;
-    }
-  }
 `;
 // #endregion
 
 // #region component
 const NotFound = () => {
   React.useEffect(() => {
-    updateTitle("Not found...");
+    updateTitle("Pagina non trovata | John Freedom");
   }, []);
 
   return (
     <>
       <StyledNotFound>
         <Container className="d-flex justify-content-center">
-          <span>4</span>
-          <img src={Logo} alt="React Logo" className="logo-img" />
-          <span>4</span>
+          <span>404</span>
         </Container>
-        <p className="text-center">Sorry, page not found...</p>
+        <p className="text-center">Pagina non trovata.</p>
       </StyledNotFound>
     </>
   );
