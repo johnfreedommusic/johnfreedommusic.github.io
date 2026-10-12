@@ -1,4 +1,4 @@
-# John Freedom Press Kit
+# John Freedom
 
 [John Freedom](https://linktr.ee/_JohnFreedom_) è un giovane immigrato italiano vissuto in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.
 
@@ -16,4 +16,3 @@
 [Ascolta John Freedom su Amazon Music](https://www.amazon.it/music/player/artists/B0DTKHCBJP/john-freedom)
 
 [Ascolta John Freedom su Apple Music](https://music.apple.com/us/artist/john-freedom/648899587)
-
