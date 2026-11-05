@@ -21,7 +21,7 @@ const navLinks = {
     { id: "2T", name: "Bio", to: "Bio" },
     ...(enable_novità
       ? [{ id: "2.5T", name: "Novità", to: "Novità" }]
-      : []),
+      : [{ id: "2.5T", name: "Nuovo singolo", to: "Ascolta il nuovo singolo" }]),
     { id: "3T", name: "Musica", to: "Musica" },
     { id: "4T", name: "Video", to: "Video" },
     { id: "4.5T", name: "Ufficio Stampa", to: "Ufficio Stampa" },

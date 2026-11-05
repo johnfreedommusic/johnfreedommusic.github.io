@@ -9,6 +9,7 @@ import CopertinaNuovaVammazzo from "./images/cop_ammazzo.webp";
 import CopCriminaleJohnCopia from "./images/cop_mc.webp";
 import LaCometaArt from "./images/cop_halley.webp";
 import LaCometaAcousticArt from "./images/cop_halley_acustico.webp";
+import LullabyHotelArt from "./images/cop_lullaby_hotel.webp";
 
 import ImmigratoInAmericaAudio from "./audio/immigrato-in-america.mp3";
 import StoriaDiUnBravuomoAudio from "./audio/storia-di-un-bravuomo.mp3";
@@ -25,7 +26,19 @@ export const enable_novità = false;
 export { HeroLight as Light };
 export { HeroDark as Dark };
 
-export const bio = "John è un giovane immigrato italiano di 26 anni, emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\n Nato nel mezzogiorno, si avvicina alla musica fin da piccolo studiando pianoforte all'età di 7 anni e scoprendo la batteria e le percussioni qualche anno dopo. È durante l'adolescenza che inizia a produrre le sue prime strumentali e a scrivere le sue prime canzoni. Da quel momento non ha più smesso di creare musica, collaborando come produttore e songwriter per amici e artisti. Adesso vive a Torino dove coltiva il suo progetto personale.\n\n Debutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. L’anno successivo apre il concerto dei Patagarri all’Hiroshima Mon Amour di Torino e apre le danze della serata di TonyPitony al TantaRobba Festival. A settembre dello stesso anno realizza il suo primo piccolo tour in cui porta lo swing in giro nella Sicilia orientale. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante. Figlio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato.\n\n La musica per John è terapia: nasce come una manifestazione della sua identità musicale, che parte dalle big band di Benny Goodman e Glenn Miller per arrivare persino al fuoco dei The Doors, ma è anche un tentativo di evasione da una società che non lo rappresenta del tutto.";
+export const bio = "John è un giovane immigrato italiano di 26 anni, emigrato in America a cavallo degli anni ruggenti. D'un tratto si è risvegliato nella società contemporanea e da quel momento si è dato un solo obiettivo: riportare in vita le ballroom dei suoi tempi.\n\n Nato nel mezzogiorno, si avvicina alla musica fin da piccolo studiando pianoforte all'età di 7 anni e scoprendo la batteria e le percussioni qualche anno dopo. È durante l'adolescenza che inizia a produrre le sue prime strumentali e a scrivere le sue prime canzoni. Da quel momento non ha più smesso di creare musica, collaborando come produttore e songwriter per amici e artisti. Adesso vive a Torino dove coltiva il suo progetto personale.\n\n Debutta a Dicembre 2024 con \"Immigrato in America\" per poi pubblicare altri 4 singoli nel corso del 2025. L’anno successivo apre il concerto dei Patagarri all’Hiroshima Mon Amour di Torino e apre le danze della serata di TonyPitony al TantaRobba Festival. A settembre dello stesso anno realizza il suo primo piccolo tour in cui porta lo swing in giro nella Sicilia orientale per poi partecipare ad Ottobre alla 18esima edizione del _reset Festival. Tutto il suo trascorso si riversa nella sua musica che unisce il vecchio e il nuovo, fondendo lo swing di un fumoso locale anni '20 con un'elettronica incalzante. Figlio di un'altra epoca, nei suoi testi denuncia il nuovo mondo che gli sta attorno, filtrandolo attraverso la lente del passato.\n\n La musica per John è terapia: nasce come una manifestazione della sua identità musicale, che parte dalle big band di Benny Goodman e Glenn Miller per arrivare persino al fuoco dei The Doors, ma è anche un tentativo di evasione da una società che non lo rappresenta del tutto.";
+
+export const featuredSingle = {
+  name: "Lullaby Hotel",
+  artwork: LullabyHotelArt,
+  previewUrl: null,
+  links: {
+    spotify: "https://open.spotify.com/track/1I7jPEotwKrrU6wKgF7ZWL?si=6f75eba23d27481f",
+    appleMusic: "https://music.apple.com/it/song/lullaby-hotel/6821226386",
+    amazonMusic: "https://music.amazon.it/tracks/B0HMJ5617F?marketplaceId=APJ6JRA9NG5V4&musicTerritory=IT&ref=dm_sh_R2SxCdJpvT1mw3JECPsT4bRCw",
+    soundcloud: "https://soundcloud.com/john-freedom-832358450/john-freedom-lullaby-hotel?si=be16da8c87354e5fa94d1ddf1b2326aa&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing",
+  },
+};
 
 export const musicData = [
   {
