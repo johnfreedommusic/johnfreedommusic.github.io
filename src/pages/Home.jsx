@@ -5,7 +5,7 @@ import QuoteSection from "../components/QuoteSection";
 import PhotoGallery from "../components/PhotoGallery";
 import AboutMe from "../components/AboutMe";
 import Novità from "../components/Novità";
-import AscoltaNuovoSingolo from "../components/AscoltaNuovoSingolo";
+import UltimaEsibizioneLive from "../components/UltimaEsibizioneLive";
 import Musica from "../components/Musica";
 import Projects from "../components/Projects";
 import UfficioStampa from "../components/UfficioStampa";
@@ -28,7 +28,7 @@ const Home = () => {
       <main style={{ position: 'relative' }}>
         <QuoteSection />
         <PhotoGallery />
-        {enable_novità ? <Novità /> : <AscoltaNuovoSingolo />}
+        {enable_novità ? <Novità /> : <UltimaEsibizioneLive />}
         <AboutMe bio={bio} />
         <Musica />
         <Projects />

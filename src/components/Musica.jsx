@@ -5,7 +5,21 @@ import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
 import SongTile from "./SongTile";
 // Config
-import { musicData } from "../config";
+import { featuredSingle, musicData } from "../config";
+
+const musicOrder = [
+  "La cometa di Halley",
+  "Storia di un brav'uomo",
+  "Lullaby Hotel",
+  "La cometa di Halley (Acoustic Version)",
+  "Mente Criminale",
+];
+
+const visibleMusic = [featuredSingle, ...musicData]
+  .filter((song) => musicOrder.includes(song.name))
+  .sort((first, second) =>
+    musicOrder.indexOf(first.name) - musicOrder.indexOf(second.name)
+  );
 
 // #region component
 const Musica = () => {
@@ -16,9 +30,9 @@ const Musica = () => {
           <Title size={"h2"} text={"Musica"} />
         </Container>
         <Container className="mt-4">
-          <Row xs={1} sm={2} md={2} lg={4} className="g-4">
-            {musicData.map((song) => (
-              <Col key={song.id}>
+          <Row xs={1} sm={2} md={2} lg={5} className="g-4">
+            {visibleMusic.map((song) => (
+              <Col key={song.name}>
                 <SongTile song={song} />
               </Col>
             ))}
